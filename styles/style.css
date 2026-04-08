@@ -52,21 +52,23 @@
 
 /* ------------------------------STYLES FOR COVER SECTION------------------------------------------------------------------------------------------*/
 .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     min-height: 757px;
     background-image: url("../images/cover.jpg");
     background-size: cover;
     background-position: top;
+    padding: 165px 50px 50px 50px;
 }
 
 .overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 165px 50px 50px 50px;
+    top: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -74,6 +76,7 @@
     display:flex;
     flex-direction: column;
     gap: 21px;
+    z-index: 1;
 }
 
 .aligned-text {
@@ -97,6 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .cover__description-text {
@@ -108,7 +112,7 @@
 }
 
 .letter-spacing-extended {
-    word-spacing: 90%
+    word-spacing: 0.85em;
 }
 
 .bet-button {
@@ -123,17 +127,12 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
-/* ------------------------------STYLES FOR MAIN CONTENT------------------------------------------------------------------------------------------*/
-.main-content {
-    display: flex;
-    flex-direction: column;
-    padding: 180px 24px 180px 24px;
-}
+
 /* ------------------------------STYLES FOR LOTS SECTION------------------------------------------------------------------------------------------*/
 .lots {
     display: flex;
     flex-direction: column;
-    margin-bottom: 120px;
+    margin: 180px 24px 120px 24px;
 }
 
 .lots__heading {
@@ -144,6 +143,7 @@
     list-style: none;
     gap: 24px;
     padding-top: 27px;
+    flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -167,10 +167,10 @@
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
 }
 .card {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     gap: 34px;
@@ -182,10 +182,12 @@
     text-underline-position: under;
     text-decoration-thickness: 1px;
     color: #FFFFFF;
+    z-index: 1;
 }
 
 .card__text {
     color: #FFFFFF;
+    z-index: 1;
 }
 
 .lots__look-more-link {
@@ -200,10 +202,11 @@
 /* ------------------------------STYLES FOR ABOUT SECTION------------------------------------------------------------------------------------------*/
 .about {
     display:flex;
+    margin: 0 24px 180px 24px;
 }
 
 .about__column-left {
-    padding: 35px 72px 0px  47px;
+    padding: 36px 72px 0px  47px;
 }
 .about__logo {
     background-color: #000000;
@@ -221,7 +224,7 @@
 }
 
 .about__column-right {
-    margin-top: 133px;
+    margin-top: 134px;
     padding-bottom: 3px;
 }
 
