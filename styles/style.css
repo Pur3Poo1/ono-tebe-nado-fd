@@ -21,6 +21,7 @@
 
 .header__link {
     text-decoration: underline;
+    text-underline-position: under;
     font-size: 18px;
 }
 
@@ -39,9 +40,16 @@
     flex-direction: column;
     max-width: 240px;
     font-size: 18px;
-    line-height: 1.35;
+    line-height: 1.4em;
     font-style: normal;
+
 }
+.address a {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 1px; 
+}
+
 .header__address {
     /*выравнивание блока*/
     justify-self: flex-end;
@@ -119,20 +127,17 @@
     display: flex;
     background: transparent;
     border: 1px solid #FFFFFF;
-}
-.bet-button span {
-    padding: 10px 26px 11px 26px;
+    padding: 12px 32px 11px 32px;
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
 /* ------------------------------STYLES FOR LOTS SECTION------------------------------------------------------------------------------------------*/
 .lots {
     display: flex;
     flex-direction: column;
-    margin: 180px 24px 120px 24px;
+    margin: 180px 24px 121px 24px;
 }
 
 .lots__heading {
@@ -188,6 +193,7 @@
 .card__text {
     color: #FFFFFF;
     z-index: 1;
+    font-size: 20px;
 }
 
 .lots__look-more-link {
@@ -202,11 +208,11 @@
 /* ------------------------------STYLES FOR ABOUT SECTION------------------------------------------------------------------------------------------*/
 .about {
     display:flex;
-    margin: 0 24px 180px 24px;
+    margin: 0 24px 179px 24px;
 }
 
 .about__column-left {
-    padding: 36px 72px 0px  47px;
+    padding: 36px 73px 0px  46px;
 }
 .about__logo {
     background-color: #000000;
@@ -231,8 +237,10 @@
 .about__text {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 102px;
     gap: 24px;
+    line-height: 1.19em;
+    font-size: 20px;
 }
 
 /* ------------------------------STYLES FOR FOOTER------------------------------------------------------------------------------------------*/
@@ -240,7 +248,6 @@
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
-    min-height: 180px;
 }
 
 .footer__menu-list-item {
@@ -250,6 +257,7 @@
 
 .footer__menu-link {
     text-decoration: underline;
+    text-underline-position: under;
     font-size: 18px;
 }
 

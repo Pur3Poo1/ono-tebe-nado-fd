@@ -27,15 +27,11 @@ blockquote {
 
 a {
   color: inherit;
-  text-underline-position: under;
-  text-decoration-thickness: 1px;
-  text-decoration-color: #FFFFFF;
+  text-decoration: none;
 }
 
 p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.2;
+  
 }
 
 h1 {
